@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* CSS Document */
+html { 
+    background-image: url(stone.jpg); 
+    background-color: #000000
+} 
+
+body { 
+    width: 761px; 
+    margin: 1.5em auto; 
+    border-style: solid; 
+    border-width: 3px; 
+    padding: 50px; 
+    background-color: #DCDCDC; 
+    font-family:Verdana, Geneva, sans-serif; 
+	color: #2F4F4F;
+	float: left;
+	font-size: 14px;
+	
+} 
+
+
+h1 { 
+	font-size: 20px;
+    padding-top: 10px;
+    color: #000000; 
+	 
+} 
+
+h2 {  
+    color: #2F4F4F; 
+	font-size: 16px;
+} 
+
+
+img { 
+    border-color: #778899; 
+    border-style: solid; 
+    border-width: 2px; 
+	
+     
+} 
+
+
+a { 
+  font-weight: bold; 
+  color: #000; 
+   
+} 
+
+
+
+
+
+
+
