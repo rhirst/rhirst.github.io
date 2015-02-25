@@ -14,7 +14,7 @@ body {
     padding: 50px; 
     background-color: #DCDCDC; 
     font-family:Verdana, Geneva, sans-serif; 
-	color: #2F4F4F;
+	color: #000000;
 	
 	font-size: 14px;
 	
@@ -45,11 +45,19 @@ img {
 
 
 a { 
-  font-weight: bold; 
-  color: #000; 
+  font-weight: bold;
+  text-decoration: none; 
+  color: #9A2EFE; 
    
 } 
 
+a:visited {
+    color: #4B088A;
+}
+
+a:hover {
+    color:#8181F7;
+}
 
 
 
