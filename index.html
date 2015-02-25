@@ -10,17 +10,18 @@
 
 		<img id="image" src = "photo.jpg" height = "225" width = "400"><br>
 		<h1>
-			Twitch.tv
+			Twitch
 		</h1>
 
 		<p>
 			Media streaming has grown exponentially in popularity within the recent years, with more and more sites offering content online for consumers who are no longer content with being slaves to their televisions.  Twitch.tv lies at the forefront of this new age of online entertainment, providing its users with game streams, talk shows, and interactive chat rooms to bolster the interactivity of their community.  <br><br>
 
-			Being so focused on user experience, Twitch naturally has clients that run accross many different platforms, including iOS, xbox one, android, and their web based Twitch.tv. The twitch clients send base64 encoded JSON objects to the servers using HTTP GETs.  The twitch servers run on nginx, using Edge computing to help cut down the data volume that must be moved around.  The nginx instances pass this HTTP request to a logging daemon, which subsequently uploads the logged data.  
-			In addition to nginx, Varnish-Cache is also used on the Twitch servers.  Varnish-Cache is an HTTP accelerator desgined with content heavy websites in mind.  <br><br>
-			The framework of Twitch's web client was built primarily with Ruby on Rails, however, the company has expresses a desire to move away from the monolithic aplication due to its issues with load spikes on unrelated sections of the site having negative impacts on each other.  
+			Being so focused on user experience, Twitch naturally has clients that run across many different platforms, including iOS, xbox one, android, and their web based Twitch.tv. The twitch clients send base64 encoded JSON objects to the servers using HTTP GETs.  The twitch servers run on nginx, using Edge computing to help cut down the data volume that must be moved around.  The nginx instances pass this HTTP request to a logging daemon written in Golang, which subsequently uploads the logged data.  
+			In addition to nginx, Varnish-Cache is also used on the Twitch servers.  Varnish-Cache is an HTTP accelerator designed with content heavy websites in mind.  <br><br>
+			The framework of Twitch's web client was built primarily with Ruby on Rails, however, the company has expressed a desire to move away from the monolithic application due to its issues with load spikes on unrelated sections of the site having negative impacts on each other.  
 			In order to store the many terabytes of data and allow for fast fetching of that data, Twitch also uses Amazon's RedShift servers, along with AWS for many of its hosting needs.<br><br>
-			With so many potential applications and clients being produced, Twitch needed a way to provide easily accessible databases and NoSQL datastores to developers.  For this, they decided to use Firebase, a cloud services provider that specializes in producing real time databases.  
+			With so many potential applications and clients being produced, Twitch needed a way to provide easily accessible databases and NoSQL datastores to developers.  For this, they decided to use Firebase, a cloud services provider that specializes in producing real time databases.  <br><br>
+			The Twitch Technology Stack encompases a wide range of technologies that utilize cloud based servers and Edge computing to provide a powerful content delivery network for it's users.  Where Twitch excels most is being able to utilize all of these in an incredibly cost effective way, and it should come as no surprise as to why they were so heavily sought after back in 2014.  The company has continued to see enormousness growth since then, showing that not only is its architecture efficient, but also scalable.
 		</p>
 
 		<h1>
