@@ -1,35 +1,27 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<link rel="stylesheet" type="text/css" href="TC349.css"> 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Ryan Hirst</title>
-</head>
+	<head>
+	<link rel="stylesheet" type="text/css" href="TC349.css"> 
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Ryan Hirst</title>
+	</head>
 
-<body>
+	<body>
 
-<img id="image" src = "photo.jpg" height = "413" width = "500"><br>
-<h1>
-Ryan Hirst<br>
-Student (Michigan State University)<br><br>
-</h1>
+		<img id="image" src = "photo.jpg" height = "225" width = "400"><br>
+		<h1>
+			Twitch.tv
+		</h1>
 
-<h2>
-Who Are You?
-</h2>
-I am Ryan Hirst, a student, gamer, soccer enthusiast, and amateur cook from Kalamazoo, Michigan.  I'm currently majoring in Media & Information with a minor in Computer Science at Michigan State University.<br>
-School usually keeps me pretty busy, but the free time I get is usually filled with whatever book I'm currently engrossed in (right now it's The Fall by Albert Camus). 
-
-<h2>
-What's Your current Setup?
-</h2>
-Currently, my enviornemnt of choice has been the CAS lab building's Macs.  I'm what you would call 'in between laptops,' meaning that I'm still trying to fix my 4 year old Dell XPS 17 after an unfortunate incedent involving a cup of coffee and its keyboard.  On the rare occaision that enough of the keys are functioning for me to use it, my preferred editor is notepad++.  I really do appreciate the fancier text editors and all they offer, but something about the simplicity of the enviornment keeps me coming back.<br>
-When I'm on the go, or attending lecture I stick with my Surface RT.  I was skeptical at first at the benefit of tablets, but after a few lectures of taking notes on it I'd be damned if I was going to go back to the stone age method of paper and pens.
-<h2>
-What's Your Dream Setup?
-</h2>
-I'm a big fan of the multiple monitor setup, having two decent sized screens to work on helps me to stay organized and focused when I've got a lot to do.  As far as the hardware goes, I'm not terribly picky.  As long as it runs everything I need without any hiccups, I'd have no complaints.  That said, I'd absolutely love to be able to have a mobile setup as well: a mac book pro with the full Adobe suite and a battery life that will last me throught the day would be bliss compared to what I'm working on now.
+		<h2>
+			Media streaming has grown exponentially in popularity within the recent years, with more and more sites offering content online for consumers who are no longer content with being slaves to their televisions.  Twitch.tv lies at the forefront of this new age of online entertainment, providing its users with game streams, talk shows, and interactive chat rooms to bolster the interactivity of their community.  <br><br>
+			The twitch servers run on nginx, using Edge computing to help cut down the data volume that must be moved around.  The twitch clients send base64 encoded JSON objects to the servers using HTTP GETs.  The nginx instances pass this HTTP request to a logging daemon, which subsequently uploads the logged data.  
+			In addition to nginx, Varnish-Cache is also used on the Twitch servers.  Varnish-Cache is an HTTP accelerator desgined with content heavy websites in mind.  <br><br>
+			The framework of Twitch's web client was built primarily with ruby on rail, however, the company has expresses a desire to move away from the monolithic aplication due to its issues with load spikes on unrelated sections of the site having negative impacts on each other.  
+			In order to store the many terabytes of data and allow for fast fetching of that data, Twitch also uses Amazon's RedShift servers, along with AWS for many of its hosting needs.<br><br>
+			With so many potential applications and clients being produced, Twitch needed a way to provide easily accessible databases and NoSQL datastores to developers.  For this, they decided to use Firebase, a cloud services provider that produces a realtime database for it's partners.  
+		</h2>
 
 
-</body>
+	</body>
 </html>
