@@ -15,7 +15,8 @@
 
 		<p>
 			Media streaming has grown exponentially in popularity within the recent years, with more and more sites offering content online for consumers who are no longer content with being slaves to their televisions.  Twitch.tv lies at the forefront of this new age of online entertainment, providing its users with game streams, talk shows, and interactive chat rooms to bolster the interactivity of their community.  <br><br>
-			The twitch servers run on nginx, using Edge computing to help cut down the data volume that must be moved around.  The twitch clients send base64 encoded JSON objects to the servers using HTTP GETs.  The nginx instances pass this HTTP request to a logging daemon, which subsequently uploads the logged data.  
+
+			Being so focused on user experience, Twitch naturally has clients that run accross many different platforms, including iOS, xbox one, android, and their web based Twitch.tv. The twitch clients send base64 encoded JSON objects to the servers using HTTP GETs.  The twitch servers run on nginx, using Edge computing to help cut down the data volume that must be moved around.  The nginx instances pass this HTTP request to a logging daemon, which subsequently uploads the logged data.  
 			In addition to nginx, Varnish-Cache is also used on the Twitch servers.  Varnish-Cache is an HTTP accelerator desgined with content heavy websites in mind.  <br><br>
 			The framework of Twitch's web client was built primarily with Ruby on Rails, however, the company has expresses a desire to move away from the monolithic aplication due to its issues with load spikes on unrelated sections of the site having negative impacts on each other.  
 			In order to store the many terabytes of data and allow for fast fetching of that data, Twitch also uses Amazon's RedShift servers, along with AWS for many of its hosting needs.<br><br>
